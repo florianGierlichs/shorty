@@ -13,6 +13,7 @@ export const findShorty = (query: FilterQuery<Shorty>) =>
 export const insertShorty = (newShorty: NewShorty) =>
   getShortiesCollection().insertOne({
     createdAt: new Date(),
+    lastAccessAt: null,
     views: 0,
     ...newShorty,
   });
