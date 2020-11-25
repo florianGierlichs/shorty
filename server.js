@@ -6,7 +6,7 @@ const routes = require("./lib/routes");
 const { ensureUniqueIdIndex } = require("./lib/shorties");
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3003;
 
 app.use(express.json());
 app.use(routes);
