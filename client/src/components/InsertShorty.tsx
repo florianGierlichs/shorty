@@ -22,8 +22,8 @@ const newShorty = {
 };
 const InsertShorty = ({ onSuccess }) => {
   const [shorty, setShorty] = useState(newShorty);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<Error | null>(null);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
